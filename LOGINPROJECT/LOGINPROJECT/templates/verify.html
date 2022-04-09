@@ -17,22 +17,23 @@
         <div class="row justify-content-center">
             <form action="verify" method="POST" class="col-lg-6 col-md-5 col-sm-12 shadow mt-5">
                 {% csrf_token%}
-                <div class="mt-3 ">
-                    <label for="phno" class="col-3">PHONE NUMBER</label>
-                    <input  class="col-7" type="text" name="phno" placeholder="ENTER REGISTERED PHONE NUMBER">
-                </div>
-                <div class="mt-3 ">
-                    <label for="pass1" class="col-3">PASSWORD</label>
-                    <input  class="col-7" type="text" name="pass1" placeholder="ENTER PASSWORD">
-                </div>
-                <div class="mt-3">
-                    <label for="pass2" class="col-3">RETYPE PASSWORD</label>
-                    <input  class="col-7 ms-0" type="text" name="pass2" placeholder="RETYPE PASSWORD">
-                </div>
-                <div class="row justify-content-around mt-3 mb-3">
-                   <!--  <a href="/home/verify" class="col-2 btn-primary" type="submit">CONFIRM</a>  -->
-                     <button class="col-2 btn-primary" type="submit">CONFIRM</button>  
-                    <button class="col-2 btn-danger" type="reset">CANCEL</button>
-                </div>
+             <div class="form-group">   
+             <p class="text-center mt-3"> OTP is sent to your Mobile Number</p>
+            </div>
+            <div class="form-group ">
+             <input type="text" name="otptext"   class="text-center ">
+             <input type="text" name="mobile" value="{{data}}"   class="text-center ">
+            </div>
 
+            <div class="row justify-content-center">
+             <button class="clo-2 btn-success btn-block" type="submit">verify</button>
+            </div>
+            <div class="row justify-content-center">
+                <button class="clo-2 btn-warning btn-block" type="submit">Resend OTP</button>
+               </div>
             </form>
+            </div>
+            </div>
+            </body>
+            </html>
+

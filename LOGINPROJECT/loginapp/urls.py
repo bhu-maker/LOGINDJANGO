@@ -3,5 +3,6 @@ from .import views
 
 urlpatterns = [path("sub",views.registering),
                path("login",views.logging),
-               path("forgot",views.forgotting)]
+               path("forgot",views.forgotting),
+               path("verify",views.verifying)]
     

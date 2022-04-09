@@ -7,3 +7,4 @@ class loginform(forms.ModelForm):
     class Meta:
         model=models.logintable
         fields="__all__"
+        
